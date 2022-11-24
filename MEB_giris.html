@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta http-equiv=Content-Type content="text/htm; charset=utf-8">
+	<meta name="robots" content="all">
+</head>
+<body>
+
+<FORM ACTION="url" METHOD="POST">
+TC Kimlik No:<input type="text" name="tcNo"></input >
+<br>
+Soyadı:<input type="text name="soyAd"></input>
+<br>
+Adı:<input type="text" name="ad"></input>
+<br>
+Görevi:<input type="text" name="gorev"></input>
+</FORM>
+<br>
+<FORM ACTION="url" METHOD="POST">
+<h4><b>Hobileriniz</b></h4>
+	<input type="checkbox" name"onay1" checked="on">İnternet</input><br>
+	<input type="checkbox" name="onay2" >Müzik</input><br>
+	<input type="checkbox" name="onay3" checked="on">Spor</input><br>
+	<input type="checkbox" name="onay4" >Televizyon</input><br>
+</FORM>
+
+<FORM ACTION="url" Method="POST">
+	<h2>Medeni Halinizi Seçiniz:</h2>
+	<input type="radio" name="1">Evli</input><br>
+	<input type="radio" name="1">Bekar</input><br>
+	<input type="radio" name="1">Boşanmış</input><br>
+	<input type="radio" name="1">Dul</input><br>
+</FORM><br>
+
+<Form>	
+	Adresiniz:<br>
+	<TextArea name="adresiniz" rows="5" cols="30"></TextArea>		
+</Form><br>
+
+<Form>
+	<select>
+		<option>İstanbul</option>
+		<option>Rize</option>
+		<option>İzmir</option>
+		<option>Malatya</option>
+	</select>
+</Form><br>
+
+<!--Yeni bir tablo oluşturuyoruz-->
+<!--Oluşturduğumuz tabloda post,radiobutton kullanıyoruz-->
+<table border="1" bgcolor="cyan" width="300px" height="200px">
+	<tr>
+		<td colspan="5"><h1>Kullanıcı Bilgileri</h1></td>
+	</tr>
+	<tr>
+		<td>Adı:</td>
+		<td colspan="4"><Form action="url" method="post"><input type="text" name="ad"></input></Form></td>
+	</tr>
+	<tr>
+		<td>Soyadı:</td>
+		<td colspan="4"><Form action="url" method="post"><input type="text" name="soyAd"></input></Form></td>		
+	</tr>
+	<tr>
+		<td colspan="1">Cinsiyeti:</td>
+		<td colspan="2"><input type="radio" name="1">Erkek</input></td>
+		<td><input type="radio" name="1">Kadın</input></td>
+	</tr>
+	<tr>
+		<td>Doğum Yeri:</td>
+		<td colspan="4">
+			<select><option>İzmir</option></select>		
+		</td>
+	</tr>
+	<tr>
+		<td>Doğum Tarihi:</td>
+		<td colspan="4">
+		<select name="gün">
+			<option>Gün</option>
+			<option>10</option>
+			<option>20</option>
+			<option>30</option>
+		</select>
+		<select name="ay">
+			<option>Ay</option>
+			<option>Ocak</option>
+			<option>Şubat</option>
+			<option>Mart</option>
+			<option>Nisan</option>
+		</select>
+		<select name="yıl">
+			<option>Yıl</option>
+			<option>1990</option>
+			<option>1991</option>
+			<option>1992</option>
+			<option>1993</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5" align="left">
+			<input type="submit" value="Kaydet">
+			<input type="reset" value="Temizle">
+		</td>
+		
+	</tr>
+</table>
+
+<img src="resim.png" height="150px" width="150px">
+
+</body>
+</html>
