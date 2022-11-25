@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta name="robots" content="all">
+<meta http-equiv=Content-Type content="text/htm; charset=utf-8">
+<title>CSS-Tablo-Özellik</title>
+<!--Araya boşluk koyup td yazarsak table içinde td,virgül koyarak yazarsak hem table hem td'ye atar.-->	
+<style>
+.mtable{
+border-collapse:collapse;
+}
+.mtable td{
+width:100px;
+height:50px;
+text-align:center;
+vertical-align:middle;
+}
+.mtable th{
+background-color:green;
+color:white;
+padding-bottom:10px;
+padding-top:10px;
+}
+</style>
+</head>
+<body>
+	<table class="mtable" border="1px">
+		<tr>			
+			<th>Ad</th>
+			<th>Soyad</th>
+			<th>Branş</th>
+		</tr>
+		<tr>			
+			<td>Yusuf</td>
+			<td>ERBAS</td>
+			<td>Yazılım</td>
+		</tr>
+		<tr>			
+			<td>Ahmet</td>
+			<td>AKAR</td>
+			<td>Öğretmen</td>
+		</tr>
+		<tr>			
+			<td>Hasan</td>
+			<td>KARA</td>
+			<td>Tamirci</td>
+		</tr>
+		<tr>			
+			<td>Tarık</td>
+			<td>PERÜ</td>
+			<td>Elektronik</td>
+		</tr>
+	</table>
+</body>
+</html>
