@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;type:utf-8;">
+	<meta name="robots" content="all">
+	<style>
+		input:[type=text]:enabled{
+			background:#ffff00;
+		}
+		input:focus{
+		background-color:green;
+		}
+		input:[type=text]:disabled{
+			background:#dddddd;
+		}
+		input:in-range{
+		border:2px solid yelow;
+		}
+		input:out-of-range{
+		border:2px solid orange;
+		}
+	</style>
+</head>
+<body>
+<form action="">
+	First Name:<input type="text" value="Jack"><br>
+	Country:<input type="number" disabled="disabled" value="111">
+	Sayı:<input type="number" min="0" max="20" value="8">
+</form>
+</body>
+</html>
