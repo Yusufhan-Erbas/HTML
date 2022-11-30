@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta name="robots" content="all">
+	<meta http-equiv="content-type" content="text/html;charset:utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.dropdowngroup{	
+		border:5px solid blue;
+		display:flex;
+		position:relative;
+		height:50px;
+		}
+		.img{
+		position:absolute;
+		margin-top:50px;
+		width:1900px;
+		height:800px;
+		}
+		.dropdown{				
+		width:20%;
+		display:inline-block;
+		height:50px;
+		}
+		.dropbtn{		
+		background-color:blue;
+		opacity:0.5;
+		display:flex;
+		text-align:center;		
+		height:50px;		
+		}
+		.dropbtn a{		
+		color:white;
+		text-decoration:none;
+		font-size:25px;
+		margin:auto;
+		display:block;
+		}
+		.dropbtn a:hover{		
+		opacity:1;
+		}		
+		.dropdown:hover .dropdown-content{
+		opacity:1;
+		display:block;		
+		}
+		.dropdown-content{		
+		display:none;
+		font-size:20px;
+		text-align:center;		
+		}
+		.dropdown-content a{
+		text-decoration:none;
+		background-color:blue;
+		opacity:0.6;
+		color:white;
+		display:block;
+		margin:2px;
+		border-radius:6px;
+		}
+	</style>
+</head>
+<body>
+	<div class="dropdowngroup">
+		<img class="img" src="landscape.jpg">
+		<div class="dropdown">
+			<span class="dropbtn"><a href="#">Anasayfa</a></span>
+			<div class="dropdown-content">
+				<a href="#">Hakkımızda</a>
+				<a href="#">Misyonumuz</a>
+				<a href="#">Vizyonumuz</a>
+				<a href="#">Tarihçe</a>
+			</div>
+		</div>
+			<div class="dropdown">
+			<span class="dropbtn"><a href="#">Eğitimler</a></span>
+			<div class="dropdown-content">
+				<a href="#">HTML</a>
+				<a href="#">CSS</a>
+				<a href="#">Javascript</a>
+				<a href="#">Bootstrap</a>
+			</div>
+		</div>			
+			<div class="dropdown">
+			<span class="dropbtn"><a href="#">İletişim</a></span>
+			<div class="dropdown-content">
+				<a href="#">E-mail</a>
+				<a href="#">Telefon</a>
+				<a href="#">Fax</a>
+				<a href="#">Adresimiz</a>
+			</div>
+		</div>
+			<div class="dropdown">
+			<span class="dropbtn"><a href="#">Öneriler</a></span>
+			<div class="dropdown-content">
+				<a href="#">Beğenilen eğitimler</a>
+				<a href="#">En çok arananlar</a>
+				<a href="#">Gelecek Eğitimler</a>				
+			</div>
+		</div>
+			<div class="dropdown">
+			<span class="dropbtn"><a href="#">Giriş Yap</a></span>
+			<div class="dropdown-content">
+				<a href="#">Kayıt ol</a>
+				<a href="#">Giriş yap</a>				
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
