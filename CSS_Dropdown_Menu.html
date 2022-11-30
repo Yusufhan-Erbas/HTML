@@ -1,0 +1,59 @@
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html;type:utf-8;">
+		<meta name="robots" content="all">
+		<style>
+			.dropdown{	
+			border:2px solid yellow;
+			display:inline-block;
+			}
+			.drpbtn{			
+			width:100px;
+			display:block;
+			background-color:green;
+			text-align:center;
+			opacity:0.7;
+			}
+			.drpbtn a{
+			text-decoration:none;
+			color:white;
+			}
+			.drpbtn:hover{
+			opacity:1;			
+			}
+			.dropdown:hover .dropdown-content{
+			display:block;
+			}
+			.dropdown-content{
+			width:170px;
+			display:none;			
+			}
+			.dropdown-content a{
+			border:1px solid gray;
+			background-color:orange;
+			display:block;
+			text-decoration:none;
+			color:black;	
+			opacity:1;
+			text-align:center;
+			margin-bottom:3px;
+			}
+			.dropdown-content a:hover{
+			opacity:0.6;
+			}
+			
+			
+			
+		</style>
+</head>
+<body>
+<div class="dropdown">
+<span class="drpbtn"><a href="#">Dropdown</a></span>
+<div class="dropdown-content">
+<a href="#">Link 1</a>
+<a href="#">Link 2</a>
+<a href="#">Link 3</a>
+</div>
+</div>
+</body>
+</html>
