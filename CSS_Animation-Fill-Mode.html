@@ -1,0 +1,25 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;type:utf-8;">
+	<meta name="robots" content="all">
+	<title>Animation</title>	
+	<style>
+		div{
+		width:100px;
+		height:100px;
+		margin:5px;
+		background-color:yellow;
+		position:relative;
+		animation:move 4s 1;
+		animation-fill-mode:forwards;
+		}
+		@keyframes move{
+		0% {background-color:yellow;left:0;top:0;}
+		100% {background-color:blue;left:200px;top:0;}		
+		}		
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
