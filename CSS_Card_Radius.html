@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;type:utf-8;">
+	<meta name="robots" content="all">
+	<style>
+		.card{
+		width:20%;
+		margin:auto;
+		height:400px;
+		padding:10px;
+		box-sizing:border-box;
+		box-shadow:1px 1px 2px 2px black;		
+		border-radius:10px;
+		position:relative;
+		}
+		.title{
+		text-align:center;
+		font-weight:bold;
+		display:block;
+		border:1px solid purple;		
+		}		
+		.altdiv{								
+		border:10px solid blue;	
+		border-radius:50%;
+		width:50%;	
+		height:30%;
+		margin:auto;
+		text-align:center;
+		border-left-color:#B22222;
+		border-right-color:rgb(204, 204, 255);
+		}		
+		.boxlist{
+		border:1px solid blue;
+		display:flex;
+		flex-wrap:wrap;	
+		padding:10%;
+		box-sizing:border-box;
+		justify-content:center;		
+		}
+		.box{
+		border:1px solid black;
+		display:inline-block;		
+		width:40%;
+		height:20%;	
+		border-radius:10%;	
+		box-shadow:5px 0 3px -3px cyan;
+		}
+		.box-first-text{
+		font-size:50%;	
+		font-weight:bold;
+		}
+		.comment{
+		opacity:0.7;color:gray;font-size:10px;
+		}
+		.boxlist-center{
+		padding:10%;
+		box-sizing:border-box;
+		}
+		.altPart{
+		position:absolute;
+		top:44%;		
+		background-color:white;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="title">
+			<h3>Good Job!</h3>
+			<p class="comment">Your score</p>
+		</div>
+		<div class="altdiv">							
+			<p style="font-size:150%">1531</p>
+			<p class="comment" style="margin:-20%;">points</p>
+		</div>
+		<div class="altPart">
+			<p class="comment">Score factors</p>
+			<div class="boxlist boxlist-center">
+				<div class="box">
+					<p class="box-first-text">823</p>
+					<p class="comment">lessons read</p>
+				</div>
+				<div class="box">
+					<p class="box-first-text">11<img src="resimler/star.png" width="6px"></p>
+					<p class="comment">stars collected</p>
+				</div>
+				<div class="box">
+					<p class="box-first-text">560</p>
+					<p class="comment">quiz points</p>
+				</div>
+				<div class="box">
+					<p class="box-first-text">148</p>
+					<p class="comment">exercise points</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
