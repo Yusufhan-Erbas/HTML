@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;type:utf-8;">
+	<meta name="robots" content="all">
+	<title>Hover Effect</title>
+	<style>
+		body{
+		background-color:#191c2e;		
+		}
+		.menu{
+		width:100%;
+		height:10%;
+		border:1px solid black;
+		display:flex;
+		padding:0;		
+		}
+		.subMenu{
+		border:1px solid yellow;
+		width:20%;
+		height:100%;
+		display:inline-block;
+		text-align:center;	
+		box-sizing:border-box;
+		}
+		.subMenu a{
+		text-decoration:none;
+				
+		}
+		.Maindiv{					
+		width:100%;
+		height:280px;	
+		margin:auto;
+		display:flex;
+		justify-content:space-evenly;
+		margin-top:15%;	
+		}
+		.card{		
+		width:20%;
+		height:100%;		
+		box-shadow:2px 2px 3px 4px;		
+		padding:0;
+		position:relative;
+		}
+		.img{
+		width:100%;
+		height:100%;
+		z-index:2;
+		background-color:#5DADE2;		
+		position:absolute;
+		transition:0.75s;		
+		}		
+		.card:hover{
+		box-shadow:0px 0px 0px 0px;
+		transition:0.75s;
+		}
+		.card:hover .img{
+		background-color:#42F745;
+		transform:translateY(-50%);		
+		}
+		.card:hover .text{		
+		transform:translateY(50%);	
+		box-shadow:2px 2px 3px 4px;
+		opacity:0.7;
+		transition:0.75s;
+		}
+		.text{
+		width:100%;
+		height:100%;
+		background-color:#dedede;
+		opacity:1;
+		z-index:1;		
+		position:absolute;				
+		transition:0.75s;
+		}
+	</style>
+</head>
+<body>
+<div class="menu">
+	<div class="subMenu"><a href="#">Anasayfa</a></div>
+	<div class="subMenu"><a href="#">Eğitimler</a></div>
+	<div class="subMenu"><a href="#">İletişim</a></div>
+	<div class="subMenu"><a href="#">Kayıt Ol</a></div>
+	<div class="subMenu"><a href="#">Giriş Yap</a></div>
+</div>
+<div class="Maindiv">
+	<div class="card">
+		<img src="resimler/code.png" class="img">
+		<div class="text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+	</div>
+	<div class="card">
+		<img src="resimler/rocket.png" class="img">
+		<div class="text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+	</div>
+	<div class="card">
+		<img src="resimler/palette.png" class="img">
+		<div class="text"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p></div>
+	</div>
+</div>
+</body>
+</html>
