@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="all">
+</head>
+<body onresize="alert('You change page size')">
+Name:<input type="text" onselect="alert('You selected text')">
+<input type="button" value="Click" onmouseup="printScreen()">
+<span></span>
+<img src="resimler/resim.png" onmouseup="alert('You out picture')">
+<script>
+//1-)In this script,write all  numbers inside a div
+/*
+for (var i=0;i<10;i++){
+document.write("<div style='border:1px solid blue;width:100%;height:50px;'>"+i+"</div>");
+}
+*/
+//2-)function void
+/*var text=prompt();
+printScreen(text);
+function printScreen(txt){
+document.write(txt);
+}
+*/
+//3-)function return value
+/*
+ var result=printScreen(); 
+document.write(result); 
+function printScreen(){ 
+ var text=prompt(); 
+return text; 
+ }
+ */
+//4-)We take two numbers user given,
+//and inside of function we added 
+//two numbers and return result
+/*var number1=parseInt(prompt("Input first number"));
+var number2=parseInt(prompt("Input second number"));
+if(number1!=NULL&number2!=NULL){
+add(number1,number2);
+}
+function add(x,y){
+var result=x+y;
+document.write(result);
+}
+*/
+//5-)We used for text
+function printScreen(msg){
+document.write(msg);
+}
+</script>
+</body>
+<html>
