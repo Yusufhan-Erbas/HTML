@@ -1,0 +1,34 @@
+<html>
+<head></head>
+<body>
+<input id ="name" type="text" placeholder="ınput text" name="name">
+<div id="text">Dertliyim derdum bitmez</div>
+<input type="button" value="print" onclick="getInputValue('name')">
+<input type="button" value="change" onclick="putText('Bu bi turlu geçmez.')">
+<script>
+function getElement(){
+var element=document.getElementById("text");
+var text=element.innerHTML;
+console.log(text);
+}
+function putText(text){
+var element=document.getElementById("text");
+var text=element.innerHTML=text;
+console.log(text);
+}
+function getInputValue(id){
+var input=document.getElementById(id);
+var div=document.getElementById("text");
+div.innerHTML=input.value;
+div.style.backgroundColor="red";
+div.style.width="150px";
+div.style.height="50px";
+div.style.color="white";
+div.style.textAlign="center";
+div.style.lineHeight="50px";
+console.log(input.value);
+}
+</script>
+
+</body>
+</html>
