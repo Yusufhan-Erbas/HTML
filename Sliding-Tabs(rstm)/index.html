@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Tabs</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            height: 95vh;
+            background-color: #021fa1;
+        }
+        .container{
+            position: absolute;
+            border:1px solid black;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width: 450px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 25px;
+            padding: 8px;
+            background-color: white;
+        }
+        #upcoming-number{
+            display: inline-block;
+            padding:10px;
+            font-size:20px;
+            cursor: pointer;
+            transition:1s;
+            border:none;
+            background-color: none;
+            border-radius:20px;
+        }
+        #upcoming{
+            display: inline-block;
+        }
+        #number{
+            display: inline-block;
+            background-color: #d1cec7;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+        }
+        #development{
+            display: inline-block;
+            padding:10px;
+            font-size:20px;
+            cursor: pointer;
+            transition:1s;
+            border:none;
+            background-color: none;
+            border-radius:20px;
+        }
+        #completed{
+            display: inline-block;
+            padding:10px;
+            font-size:20px;
+            cursor: pointer;
+            transition:1s;
+            border:none;
+            background-color: none;
+            border-radius:20px;
+        }
+        .active{
+        background-color: black;
+        color:white;
+        border-radius:20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="active" id="upcoming-number" onclick="swipe('upcoming-number')">
+            <span id="upcoming">Upcoming</span>
+            <span id="number">2</span>
+        </div>
+        <div class="active" id="development" onclick= "swipe('development')">Development</div>
+        <div class="active" id="completed" onclick= "swipe('completed')">Completed</div>
+        
+    </div>
+    <script>
+        function swipe(id){
+        var elements = document.getElementsByClassName("active");
+        
+            for(var i=elements.length;i>0;i--){
+                console.log("eski: "+elements.length);
+                elements[i-1].classList.remove("active");
+                elements = document.getElementsByClassName("active");
+                console.log("güncellenmiş: "+elements.length);
+            }
+        // var div=document.getElementById(id);
+        // div.className="active";
+    }
+    </script>
+</body>
+</html>

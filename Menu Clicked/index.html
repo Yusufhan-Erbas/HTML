@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sliding Tabs</title>
+    <style>
+        .active{       
+           background-color:#009EFF;
+           border-radius:5vh;
+        }
+        .container{
+            background-color:blue;
+            border-radius:5vh;
+        }
+        .container ul{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content:flex-start;            
+            width: 100%;
+            height: 40px;
+            
+        }
+        .container ul li{
+            display: inline-block;
+            width:15%;
+            height:100%;         
+        }
+        .container ul li a {
+            text-decoration: none;                  
+            display:block;
+            width:100%;
+            height:100%;
+            line-height: 40px;
+            color:white;
+            text-align:center;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#" onclick="setClass(0)">Menu</a></li>
+            <li><a href="#" onclick="setClass(1)">Hakkımızda</a></li>
+            <li><a href="#" onclick="setClass(2)">İletişim</a></li>
+        </ul>
+    </div>
+    <script>
+        function setClass(index) {
+            var container = document.getElementsByClassName("container")[0];
+            var ul=container.firstElementChild;
+            var lis=ul.children;
+            for(li of lis){
+                var a=li.firstElementChild;
+                a.classList.remove("active");
+            }
+            var li=ul.children[index];
+            li.firstElementChild.className="active";
+        }
+    </script>
+</body>
+
+</html>
