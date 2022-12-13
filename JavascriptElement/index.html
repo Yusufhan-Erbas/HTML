@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container{
+            border:1px solid red;
+            width:100%;
+            height:20vh;
+        }
+        .table{
+            border:1px solid black;
+            width:60vh;
+            height:10vh;
+            border-collapse:collapse;
+        }
+        .tr{
+            border:1px solid green;
+            width:60vh;
+            height:10vh;
+            
+        }
+        .td{
+            border:1px solid #bababa;
+            width:20vh;
+            height:10vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+      
+    </div>
+    <script>
+        var div=document.getElementById("container");
+        var table=document.createElement("table");
+        var tr=document.createElement("tr");
+        for(var sutun=0;sutun<3;sutun++){
+            var td=document.createElement("td")
+            td.className="td";
+            td.innerHTML=sutun+1+". sutun";
+            tr.appendChild(td)
+        }
+        
+
+        table.className="table";
+        tr.className="tr";
+    
+        table.appendChild(tr);
+        div.appendChild(table);
+
+    </script>
+</body>
+</html>
