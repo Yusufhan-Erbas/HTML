@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   </head>
+<body>
+       
+    <div class="container">
+        <div onclick="showHideItems('dropdown-items')" class="dropdown-btn">
+            <div class="icon-social"><i class="material-icons icon-style">cloud</i></div>
+            <div class="text">Social Media</div>
+            <div class="icon-btn"><i class="material-icons icon-style">arrow_drop_down</i></div>
+        </div>
+        <div class="dropdown-items">
+            <div class="slider"></div>
+            <ul>
+                <li><a onclick="clickItem(0);" onmouseover="slideBg(0)" onmouseout="sliderHide(0)" href="#">Youtube</a></li>
+                <li><a onclick="clickItem(1);" onmouseover="slideBg(1)" onmouseout="sliderHide(1)" href="#">LinkedIn</a></li>
+                <li><a onclick="clickItem(2);" onmouseover="slideBg(2)" onmouseout="sliderHide(2)" href="#">Instagram</a></li>
+                <li><a onclick="clickItem(3);" onmouseover="slideBg(3)" onmouseout="sliderHide(3)" href="#">Twitter</a></li>
+                <li><a onclick="clickItem(4);" onmouseover="slideBg(4)" onmouseout="sliderHide(4)" href="#">Facebook</a></li>   
+            </ul>
+        </div>
+    </div>
+    <script>
+    function showHideItems(clsName){
+        var itemsHolder=document.getElementsByClassName(clsName)[0];
+        var itemStyle=itemsHolder.style;
+        itemStyle.display=="block"?itemStyle.display="none":itemStyle.display="block";
+    }
+    function slideBg(index){
+       
+        var slider=document.getElementsByClassName("slider")[0];
+      
+        var itemsHolder=document.getElementsByClassName("dropdown-items")[0];
+        
+        var ul=itemsHolder.children[1];
+       
+        var listItems=ul.children;
+    
+        var clicked=listItems[index].firstElementChild;
+     
+        var distance=clicked.offsetTop;
+        slider.style.top=distance+"px";
+        slider.style.transition="0.3s ease";
+        console.log(distance);
+
+       
+    }
+    function clickItem(index){
+        var text=document.getElementsByClassName("text")[0];
+        var itemsHolder=document.getElementsByClassName("dropdown-items")[0];
+        
+        var ul=itemsHolder.children[1];
+       
+        var listItems=ul.children;
+    
+        var clicked=listItems[index].firstElementChild;
+        text.innerHTML=clicked.innerHTML;
+    }
+    function sliderHide(index){
+        var slider=document.getElementsByClassName("slider")[0];
+        
+    }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
