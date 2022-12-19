@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider Menu</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+    <!--Genel Container-->
+    <div class="slider-container">
+        <!--Resimleri tutan container-->
+        <div class="imgs-container">
+            <!--Her resimi tutan container-->
+            <div class="img-container">
+                <img src="Horse.jpg" alt="resim1">
+            </div>
+            <div class="img-container">
+                <img src="Jetski.jpg" alt="resim2">
+            </div>
+            <div class="img-container">
+                <img src="City.jpg" alt="resim3">
+            </div>
+        </div>
+        <a class="sol" onclick="kaydir('+')" href="#">Sol</a>
+        <a class="sag" onclick="kaydir('-')" href="#">Sağ</a>
+    </div>
+    <script>
+        var index = 0;
+        var screenWidth = screen.width+"px";
+        var imageContainers = document.getElementsByClassName("img-container");
+        for (var i = 1; i < imageContainers.length-1; i++) {
+            imageContainers[i+1].style.transform = "translateX(1280px)";
+
+        }
+        function kaydir(opr) {
+            if (opr == "+") {
+                var imageContainers = document.getElementsByClassName("img-container");
+                if (index < imageContainers.length-1) {
+                    imageContainers[index].style.transform = "translateX(-1280px)";
+                    imageContainers[index+1].style.transform = "translateX(0px)";
+                  
+                }
+                if (index < imageContainers.length) {
+                    
+                }
+
+            }
+            else {
+                var imageContainers = document.getElementsByClassName("img-container");
+              
+                if (index > 0) {
+                    imageContainers[index].style.transform = "translateX(0px)";
+                    imageContainers[index-1].style.transform = "translateX(1280px)";
+                    index--;
+                    console.log(index);
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
